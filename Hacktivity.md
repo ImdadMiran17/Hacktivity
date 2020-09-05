@@ -5,7 +5,7 @@ supported, then
 2)) Sometimes i get confused with smbclient. So this note is for mine.
 > smbclient -L $IP$or$domain$
 
-> smbclient \\\\$IP$or$domain$\share
+> smbclient \\\\\\\\$IP$or$domain$\\\\share
 
 For downloading a file from remote server,
 > get file
