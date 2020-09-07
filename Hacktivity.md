@@ -26,4 +26,9 @@ For uploading a file to remote server,
 > zip2john file.zip > file.hash
 > john file.hash
 
+6)) Suppose you have a image file. As you are a hacker, you know what's that.You can extract a file or message from that image file.You can use binwalk.
+
+> binwalk file.png
+> binwalk -e file.png
+
 
