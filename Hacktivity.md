@@ -30,7 +30,8 @@ For uploading a file to remote server,
 
 > john file.hash
 
-6)) Suppose you have a image file. As you are a hacker, you know what's that.You can extract a file or message from that image file.You can use binwalk.
+6)) Suppose you have a image file. As you are a hacker, you know what's that.You can extract a file or message from that image file.You can use binwalk for 
+extracting file and steghide or zsteg for message.
 
 > binwalk file.png
 
