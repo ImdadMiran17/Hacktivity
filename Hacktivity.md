@@ -37,4 +37,7 @@ extracting file and steghide or zsteg for message.
 
 > binwalk -e file.png
 
+7)) I don't know why linux system doesn't actually take golang as their own.Every time i have to write the following command to poke the system.
+
+> source ~/.profile
 
