@@ -84,7 +84,7 @@ You’ll need to authorise the target to connect to you (command also run on you
 >
 > BEGIN { <br>
 >        Port    =       8080 <br>
->        Prompt  =       "bkd> " <br>
+>        Prompt  =       "bkd> "
 >
 >        Service = "/inet/tcp/" Port "/0/0" <br>
 >        while (1) { <br>
