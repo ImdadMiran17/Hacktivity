@@ -41,6 +41,6 @@ extracting file and steghide or zsteg for message.
 
 > source ~/.profile
 
-8) To see if capabilities are set on files in linux system, 
+8)) To see if capabilities are set on files in linux system, 
 
 > getcap -r / 2>/dev/null
