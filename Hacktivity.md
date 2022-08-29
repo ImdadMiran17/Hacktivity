@@ -48,5 +48,6 @@ extracting file and steghide or zsteg for message.
 9)) Sometime ssh command doesn't work. Below command might help,
 
 > sudo ip link set dev tun0 mtu 1200
+
 Changing the mtu can help, increasing it can improve performance, decreasing can help with packet loss.
 
