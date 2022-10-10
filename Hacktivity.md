@@ -51,3 +51,14 @@ extracting file and steghide or zsteg for message.
 
 Changing the mtu can help, increasing it can improve performance, decreasing can help with packet loss.
 
+10)) After getting a reverse shell,
+
+> python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+> press ctrl+z, to background the process
+
+> stty raw -echo;fg
+
+> export TERM = xterm
+
+
